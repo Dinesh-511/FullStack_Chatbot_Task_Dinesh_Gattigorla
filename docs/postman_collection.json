@@ -1,0 +1,156 @@
+{
+  "info": {
+    "name": "DroneTV AI Support & Lead Assistant API",
+    "description": "Comprehensive Postman collection for DroneTV REST API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": ["{{base_url}}"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Admin Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "if (jsonData.success && jsonData.data && jsonData.data.token) {",
+              "    pm.environment.set('admin_token', jsonData.data.token);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin123\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/admin/login",
+          "host": ["{{base_url}}"],
+          "path": ["admin", "login"]
+        }
+      }
+    },
+    {
+      "name": "Submit Enquiry (Public)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Suresh Nambiar\",\n  \"email\": \"suresh@agrotech.in\",\n  \"phone\": \"+91-9876543210\",\n  \"userType\": \"Customer\",\n  \"interest\": \"Agricultural Spraying & Crop Health\",\n  \"message\": \"Looking to deploy spray drones across our rubber plantations.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/enquiries",
+          "host": ["{{base_url}}"],
+          "path": ["enquiries"]
+        }
+      }
+    },
+    {
+      "name": "Get All Enquiries (Admin)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{admin_token}}" }
+        ],
+        "url": {
+          "raw": "{{base_url}}/enquiries?page=1&limit=10&status=New",
+          "host": ["{{base_url}}"],
+          "path": ["enquiries"],
+          "query": [
+            { "key": "page", "value": "1" },
+            { "key": "limit", "value": "10" },
+            { "key": "status", "value": "New" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Enquiry By ID (Admin)",
+      "request": {
+        "method": "GET",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{admin_token}}" }
+        ],
+        "url": {
+          "raw": "{{base_url}}/enquiries/:id",
+          "host": ["{{base_url}}"],
+          "path": ["enquiries", ":id"],
+          "variable": [
+            { "key": "id", "value": "YOUR_ENQUIRY_OBJECT_ID" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Enquiry Status (Admin)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{admin_token}}" },
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"In Progress\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/enquiries/:id",
+          "host": ["{{base_url}}"],
+          "path": ["enquiries", ":id"],
+          "variable": [
+            { "key": "id", "value": "YOUR_ENQUIRY_OBJECT_ID" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Enquiry (Admin)",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          { "key": "Authorization", "value": "Bearer {{admin_token}}" }
+        ],
+        "url": {
+          "raw": "{{base_url}}/enquiries/:id",
+          "host": ["{{base_url}}"],
+          "path": ["enquiries", ":id"],
+          "variable": [
+            { "key": "id", "value": "YOUR_ENQUIRY_OBJECT_ID" }
+          ]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:5000/api"
+    },
+    {
+      "key": "admin_token",
+      "value": ""
+    }
+  ]
+}

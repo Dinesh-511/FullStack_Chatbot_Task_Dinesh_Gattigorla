@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Aarav Sharma",
+    "email": "aarav.sharma@example.com",
+    "phone": "+91-9820123456",
+    "userType": "Student",
+    "interest": "DGCA Remote Pilot License (RPC)",
+    "message": "Hello DroneTV team, I am a final year aerospace engineering student looking to obtain my DGCA certified drone pilot license. When is the next batch starting in Bengaluru?",
+    "status": "New"
+  },
+  {
+    "name": "Priya Sundaram",
+    "email": "priya.sundaram@greenfarms.org",
+    "phone": "+91-9840234567",
+    "userType": "Customer",
+    "interest": "Agricultural Spraying & Crop Health",
+    "message": "We manage 45 acres of paddy and sugarcane in Tamil Nadu. We are looking for drone-based liquid fertilizer spraying contracts for the upcoming season.",
+    "status": "Contacted"
+  },
+  {
+    "name": "Vikram Malhotra",
+    "email": "vikram@cineluxmedia.in",
+    "phone": "+91-9811345678",
+    "userType": "Customer",
+    "interest": "Drone Aerial Cinematography",
+    "message": "Looking for a certified FPV and cinema heavy-lift drone crew for a 4-day commercial shoot in Mumbai and Goa next month.",
+    "status": "In Progress"
+  },
+  {
+    "name": "Ananya Patel",
+    "email": "ananya.patel@gujaratbuildcon.com",
+    "phone": "+91-9879456789",
+    "userType": "Customer",
+    "interest": "Aerial Survey & 3D Photogrammetry",
+    "message": "We need topographic survey and LiDAR mapping for an upcoming highway expansion project near Ahmedabad. Please send your capability deck and quotation.",
+    "status": "Closed"
+  },
+  {
+    "name": "Rohan Kulkarni",
+    "email": "rohan.kulkarni@techindia.edu",
+    "phone": "+91-9765567890",
+    "userType": "Student",
+    "interest": "Drone Assembly, Repair & Maintenance",
+    "message": "I want to specialize in drone hardware architecture and firmware tuning. Do you provide hands-on workshop kits during the training?",
+    "status": "New"
+  },
+  {
+    "name": "Meera Nambiar",
+    "email": "meera.n@keralaplantations.com",
+    "phone": "+91-9447678901",
+    "userType": "Customer",
+    "interest": "Infrastructure & Solar Panel Inspection",
+    "message": "We require thermal drone inspection for a 12MW rooftop and ground-mounted solar park to detect micro-cracks and hot spots.",
+    "status": "Contacted"
+  },
+  {
+    "name": "Karthik Venkat",
+    "email": "karthik.v@droneenthusiast.net",
+    "phone": "+91-9980789012",
+    "userType": "Student",
+    "interest": "Precision Agriculture Drone Operations",
+    "message": "Interested in taking the weekend batch for agricultural drone operations. Are there any prerequisites or prior flying hours needed?",
+    "status": "In Progress"
+  },
+  {
+    "name": "Devika Sen",
+    "email": "devika.sen@consultcorp.in",
+    "phone": "+91-9830890123",
+    "userType": "Other",
+    "interest": "Custom Drone Solutions & Consulting",
+    "message": "Our consulting firm is conducting a feasibility study on urban drone delivery corridors for tier-2 smart cities. Would like to schedule an advisory consultation.",
+    "status": "New"
+  }
+]
