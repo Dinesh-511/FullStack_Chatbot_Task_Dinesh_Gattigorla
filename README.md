@@ -14,11 +14,11 @@ An original, full-stack responsive web application featuring a rule-based intell
 
 | Service | Platform | URL | Status |
 | :--- | :--- | :--- | :--- |
-| **Frontend Application** | **Vercel** | [https://dronetv.vercel.app](https://dronetv.vercel.app) *(Replace with your Vercel URL)* | Live |
+| **Frontend Application** | **Vercel** | [https://dronetv-dinesh.vercel.app](https://dronetv-dinesh.vercel.app) | Live (200 OK) |
 | **Backend REST API** | **Render** | [https://dronetv-backend-dryf.onrender.com](https://dronetv-backend-dryf.onrender.com) | Live (200 OK) |
 | **API Health Check** | **Render** | [https://dronetv-backend-dryf.onrender.com/api/health](https://dronetv-backend-dryf.onrender.com/api/health) | `{"database":"connected"}` |
 
-> 🔑 **Admin Portal Credentials**: Visit `/admin` on your frontend deployment:
+> 🔑 **Admin Portal Credentials**: Visit [`https://dronetv-dinesh.vercel.app/admin`](https://dronetv-dinesh.vercel.app/admin):
 > - **Username**: `admin`
 > - **Password**: `admin123`
 
