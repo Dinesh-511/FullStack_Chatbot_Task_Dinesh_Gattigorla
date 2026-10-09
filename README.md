@@ -15,8 +15,8 @@ An original, full-stack responsive web application featuring a rule-based intell
 | Service | Platform | URL | Status |
 | :--- | :--- | :--- | :--- |
 | **Frontend Application** | **Vercel** | [https://dronetv.vercel.app](https://dronetv.vercel.app) *(Replace with your Vercel URL)* | Live |
-| **Backend REST API** | **Render** | [https://dronetv-backend.onrender.com](https://dronetv-backend.onrender.com) *(Replace with your Render URL)* | Live |
-| **API Health Check** | **Render** | [https://dronetv-backend.onrender.com/api/health](https://dronetv-backend.onrender.com/api/health) | `{"status":"ok"}` |
+| **Backend REST API** | **Render** | [https://dronetv-backend-dryf.onrender.com](https://dronetv-backend-dryf.onrender.com) | Live (200 OK) |
+| **API Health Check** | **Render** | [https://dronetv-backend-dryf.onrender.com/api/health](https://dronetv-backend-dryf.onrender.com/api/health) | `{"database":"connected"}` |
 
 > 🔑 **Admin Portal Credentials**: Visit `/admin` on your frontend deployment:
 > - **Username**: `admin`
